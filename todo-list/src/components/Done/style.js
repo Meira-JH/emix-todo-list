@@ -7,9 +7,18 @@ export const DoneWrapper = styled.div`
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
-  padding: 45px;
+  padding: 0 20px;
+  max-height: 300px;
+  overflow-y: auto;
 
   li {
     border-bottom: grey solid 1px;
   }
 `;
+
+
+export const Title = styled.span`
+  color: #005454;
+  font-size: 20px;
+  font-weight: 900;
+`

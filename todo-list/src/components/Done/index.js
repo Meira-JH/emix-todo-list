@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from "react";
-import {
-  DoneWrapper,
-} from "./style";
-import { connect } from "react-redux";
+import React from "react";
+import { DoneWrapper } from "./style";
+import CheckBoxListDone from "../CheckBoxListDone";
+import { Title } from "../ToDo/style";
 
-const Done = (props) => {
-
+const Done = ({ taskList, taskToDelete, taskDone }) => {
   return (
     <DoneWrapper>
-        <h3>FEITO</h3>
-            <li></li>
-            <li></li>
-            <li></li>
+      <Title>FEITO</Title>
+      <CheckBoxListDone taskList={taskList} taskToDelete={taskToDelete} taskDone={taskDone} />
     </DoneWrapper>
   );
 };
 
-
-const mapStateToProps = (state) => ({
-});
-
-
-export default connect(mapStateToProps, null)(Done);
+export default Done;

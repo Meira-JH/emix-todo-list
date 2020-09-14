@@ -1,24 +1,27 @@
-import React, { useEffect, useState } from "react";
-import {
-  ToDoWrapper,
-} from "./style";
-import { connect } from "react-redux";
+import React from "react";
+import { Title, ToDoWrapper } from "./style";
+import CheckboxListToDo from "../CheckBoxListToDo";
 
-const ToDo = (props) => {
-
+const ToDo = ({
+  taskList,
+  taskToEdit,
+  taskUpdate,
+  taskToDelete,
+  taskDone
+}) => {
   return (
-    <ToDoWrapper>
-        <h3>A FAZER</h3>
-            <li></li>
-            <li></li>
-            <li></li>
+    <ToDoWrapper key={"wrapper-key"}>
+      <Title>A FAZER</Title>
+      <CheckboxListToDo
+        key={"checkbox-key"}
+        taskList={taskList}
+        taskToEdit={taskToEdit}
+        taskUpdate={taskUpdate}
+        taskToDelete={taskToDelete}
+        taskDone={taskDone}
+      />
     </ToDoWrapper>
   );
 };
 
-
-const mapStateToProps = (state) => ({
-});
-
-
-export default connect(mapStateToProps, null)(ToDo);
+export default ToDo;
