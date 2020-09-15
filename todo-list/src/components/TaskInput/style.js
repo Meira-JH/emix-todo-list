@@ -27,6 +27,7 @@ export const AddButton = styled.button`
   color: #ffff;
   padding: 11px;
   width: 20%;
+  min-width: 110px;
   background-color: #36afd1;
   border-radius: 0 3px 3px 0;
   border: none;

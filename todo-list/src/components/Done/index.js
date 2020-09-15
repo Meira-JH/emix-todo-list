@@ -7,7 +7,10 @@ const Done = ({ taskList, taskToDelete, taskDone }) => {
   return (
     <DoneWrapper>
       <Title>FEITO</Title>
-      <CheckBoxListDone taskList={taskList} taskToDelete={taskToDelete} taskDone={taskDone} />
+      <CheckBoxListDone 
+      taskList={taskList} 
+      taskToDelete={taskToDelete} 
+      taskDone={taskDone} />
     </DoneWrapper>
   );
 };

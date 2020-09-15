@@ -37,7 +37,6 @@ const CheckboxListDone = ({ taskList, taskDone, taskToDelete }) => {
   const classes = useStyles();
 
   const handleToggle = (task) => {
-    console.log(task);
     if (task.done) {
       taskDone(task.id);
     }

@@ -14,11 +14,8 @@ const TaskInput = ({ setNewTask }) => {
     ) {
       setTaskInput(event.target.value);
     }
-    if (
-      event.keyCode === 13 ||
-      event.charCode === 13
-    ) {
-      addTask()
+    if (event.keyCode === 13 || event.charCode === 13) {
+      addTask();
     }
   }
 

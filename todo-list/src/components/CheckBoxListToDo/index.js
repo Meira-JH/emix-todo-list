@@ -48,7 +48,6 @@ const CheckBoxListToDo = ({
   const [editText, setEditText] = React.useState("");
 
   const handleToggle = (task) => {
-    console.log(task);
     if (!task.done) {
       taskDone(task.id);
     }

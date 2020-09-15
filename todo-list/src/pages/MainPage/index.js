@@ -12,7 +12,6 @@ const MainPage = (props) => {
     const newTaskList = taskList.map((task) => {
       if (task.id === taskDone) {
         task.done = !task.done;
-        console.log(task);
       }
       return task;
     });
@@ -23,7 +22,6 @@ const MainPage = (props) => {
     const newTaskList = taskList.map((task) => {
       if (task.id === taskToEdit) {
         task.edit = !task.edit;
-        console.log(taskToEdit, task);
       }
       return task;
     });
@@ -31,10 +29,7 @@ const MainPage = (props) => {
   };
 
   const handleDelete = (taskToDelete) => {
-    console.log("entrou delete", taskToDelete);
-
     const newTaskList = taskList.filter((task) => task.id !== taskToDelete);
-    console.log(newTaskList);
     setTaskList(newTaskList);
   };
 
@@ -43,7 +38,6 @@ const MainPage = (props) => {
       if (task.id === taskUpdate.id) {
         task.description = taskUpdate.description;
         task.edit = !task.edit;
-        console.log(task);
       }
       return task;
     });

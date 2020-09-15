@@ -20,4 +20,4 @@ export const Title = styled.span`
   color: #005454;
   font-size: 20px;
   font-weight: 900;
-`
+`;

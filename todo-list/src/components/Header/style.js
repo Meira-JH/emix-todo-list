@@ -9,12 +9,12 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   padding: 20px 3vw;
 
-  img{
-      height: 30px;
+  img {
+    height: 30px;
   }
-  span{
-      font-size: 30px;
-      color: #ffff;
-      font-weight: 700;
+  span {
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 700;
   }
 `;
