@@ -12,9 +12,15 @@ export const HeaderWrapper = styled.div`
   img {
     height: 30px;
   }
-  span {
-    font-size: 30px;
-    color: #ffff;
-    font-weight: 700;
-  }
+`;
+
+export const Bold = styled.span`
+  font-size: 30px;
+  color: #ffff;
+  font-weight: 900;
+`;
+export const Thin = styled.span`
+  font-size: 30px;
+  color: #ffff;
+  font-weight: 100;
 `;

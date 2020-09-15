@@ -88,6 +88,7 @@ const CheckboxListDone = ({ taskList, taskDone, taskToDelete }) => {
               </ListItem>
             );
           }
+          return null
         })}
     </List>
   );

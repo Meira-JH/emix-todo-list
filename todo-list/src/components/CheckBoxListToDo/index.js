@@ -169,6 +169,7 @@ const CheckBoxListToDo = ({
                   </Fragment>
                 );
               }
+              return null
             })
         : ""}
     </List>
